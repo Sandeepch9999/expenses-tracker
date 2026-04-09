@@ -1,4 +1,4 @@
-const API_BASE = 'expenses-tracker-production-5dc3.up.railway.app';
+const API_BASE = 'https://expenses-tracker-production-5dc3.up.railway.app/api/expenses';
 
 const CATEGORY_META = {
   Food:          { emoji: '🍔', colorClass: 'cat-food',          chartColor: '#f59e0b', bgClass: 'card-orange' },

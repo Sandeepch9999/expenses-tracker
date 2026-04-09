@@ -1,4 +1,4 @@
-const API_BASE = 'https://expenses-tracker-production-5dc3.up.railway.app/api/expenses';
+const API_BASE = "https://expenses-tracker-production-5dc3.up.railway.app/api/expenses";
 
 const CATEGORY_META = {
   Food:          { emoji: '🍔', colorClass: 'cat-food',          chartColor: '#f59e0b', bgClass: 'card-orange' },
@@ -37,7 +37,7 @@ async function fetchExpenses() {
     allExpenses = await res.json();
     renderAll();
   } catch (err) {
-    showToast('Cannot connect to server. Make sure Spring Boot is running on port 8081.', 'error');
+    showToast('Cannot connect to server.', 'error');
     console.error('Fetch error:', err);
   }
 }
